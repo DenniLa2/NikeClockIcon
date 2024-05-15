@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ClockView: View {
+struct IconView: View {
     @State var currentTime: (hour: String, minute: String) = ("", "")
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
@@ -46,6 +46,6 @@ struct ClockView: View {
 
 struct ClockView_Previews: PreviewProvider {
     static var previews: some View {
-        ClockView()
+        IconView()
     }
 }
